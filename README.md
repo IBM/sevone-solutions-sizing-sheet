@@ -16,14 +16,20 @@ This repository contains Excel sizing sheets to estimate capacity requirements f
 
 ## Usage
 
-### Step 1: Select Solution Sheet
-📁 SevOne-Sizing-Sheets/
-├── Mist_Sizing_sheet_8.1.xlsx
-├── Meraki_Sizing_sheet_8.1.xlsx
-└── SDWAN_sizing_sheet_all_vendors_8.1.0.xlsx
+### Step 1: Clone the github repo into your machine
+
+```bash
+ git clone https://github.com/IBM/sevone-solutions-sizing-sheet.git
+
+```
+### Step 2: Open the Solution Sheet
+
+- Mist_Sizing_sheet_8.1.xlsx
+- Meraki_Sizing_sheet_8.1.xlsx
+- SDWAN_sizing_sheet_all_vendors_8.1.0.xlsx
 
 
-### Step 2: Input Your Data
+### Step 3: Input Your Data
 1. Open the Excel sheet for your solution
 2. Navigate to the relevant tab
 3. **Fill yellow/highlighted input cells only:**
@@ -32,7 +38,7 @@ This repository contains Excel sizing sheets to estimate capacity requirements f
    - Polling interval
    - Solution-specific metrics (tunnels, clients, sites, etc.)
 
-### Step 3: Review Outputs
+### Step 4: Review Outputs
 **Calculated automatically:**
 - ✅ Total Objects
 - ✅ Indicators per Second (IPS)
@@ -49,11 +55,4 @@ This repository contains Excel sizing sheets to estimate capacity requirements f
 | IPS + Objects                 | **NMS Appliance Tier**      |
 
 
-> **Reference:** [SevOne NMS Hardware Guide](https://www.ibm.com/docs/en/sevone-nms)
-
-## Assumptions & Notes
-
-- Default retention: 7 days (adjust formulas if different)
-- Polling assumes standard SevOne intervals (60s-300s)
-- Cluster sizing: Multiple peers for >100k objects
-- **Always validate** with official SevOne sizing methodology for production
+> **Reference:** [SevOne NMS Hardware Guide]([https://www.ibm.com/docs/en/sevone-nms](https://www.ibm.com/docs/en/sevone-npm/8.0.0?topic=guides-sevone-nms-hardware-requirements-instance-types-guide))
